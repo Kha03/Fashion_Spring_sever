@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=fashion;encrypt=false;trustServerCertificate=true;
+    username: sa
+    password: sapassword
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 20MB
+
+
+jwt:
+  private-key: RY8ivVBksRHZ6LFRLb3Q73irlcF67SzjBQegDtT28epyRSf9bir0avhXRTSst3G94ABSxaEdCu3BaRiwRJhHrIHumYByfcrZ4IG3rSiMzd0IZzL4kU2Qhs60rzkv3X0K7FMVhfekkpM8DcA2Hx7RJm8dSgpg7mpXWFyztlvgeYIEqWD9JWjAfZUUxaOhl07rH609wK3xRB94edxzaVwCwtb38uZvf6sM1EyLhewDibLCXIgwqpdSLXHkCM4RSZFhdQ2mbDRJ6fQ69RWLqkjO1ySKEKizowdaBEFuqO68gG5PwJZv8KGivOcymSOcs5xplap9w2WUZokQSVMy8AMkeFAJUPb4rQwUFCzDVuXIbtlCjouOzRq69GdHBGG7byje6sIXUGr80Y4pwpmR4JVPuMr2AoudIEWKPR1xj2I2abAc6ti4jpUUTOrqSix6TrYuz4rmFevIrXbuziokk6AWS1iChdH3up0yt41pP30AvISozjfbdB3DqlmAbHJR8qGt
+#file-upload-path:
+#  root: D:\Study\web_spring\clothes_img
